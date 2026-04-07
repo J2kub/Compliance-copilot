@@ -1,0 +1,36 @@
+GDPR – Zásady spracúvania osobných údajov (článok 5)  [GDPR_zasady]
+GDPR definuje základné zásady, ktoré musí každé spracúvanie osobných údajov rešpektovať.
+Hlavné zásady:
+- zákonnosť, korektnosť a transparentnosť – spracúvanie musí mať právny základ, nesmie byť klamlivé a dotknutá osoba má vedieť, čo sa s jej údajmi deje,
+- obmedzenie účelu – údaje sa zbierajú na konkrétne, legitímne účely a nesmú sa používať na iný, nezlučiteľný účel,
+- minimalizácia údajov – spracúvajú sa len tie údaje, ktoré sú nevyhnutné na daný účel,
+- presnosť – údaje majú byť aktuálne a nepresné údaje sa musia opravovať alebo mazať,
+- obmedzenie uchovávania – údaje sa uchovávajú len po dobu, ktorá je potrebná na účel,
+- integrita a dôvernosť – zaistenie primeranej bezpečnosti údajov (vrátane ochrany pred neoprávneným prístupom alebo stratou).
+
+GDPR – Bezpečnosť spracúvania (článok 32)  [GDPR_bezpecnost]
+Prevádzkovateľ a sprostredkovateľ musia zaviesť primerané technické a organizačné opatrenia, aby chránili osobné údaje pred rizikami. Úroveň bezpečnosti má byť primeraná riziku. [web:258]
+Príklady opatrení:
+- pseudonymizácia a šifrovanie osobných údajov,
+- zabezpečenie dôvernosti, integrity, dostupnosti a odolnosti systémov,
+- pravidelné testovanie a hodnotenie účinnosti bezpečnostných opatrení,
+- schopnosť rýchlo obnoviť dostupnosť údajov po incidente.
+
+GDPR – Záznamy o činnostiach spracúvania (článok 30)  [GDPR_zaznamy]
+Prevádzkovateľ (a v niektorých prípadoch aj sprostredkovateľ) je povinný viesť záznamy o spracovateľských činnostiach. Záznamy slúžia ako dôkaz o tom, že organizácia má prehľad o spracovaní údajov. [web:259][web:262][web:265]
+Záznamy typicky obsahujú:
+- účely spracovania,
+- kategórie dotknutých osôb a osobných údajov,
+- kategórie príjemcov, ktorým sa údaje poskytujú,
+- informácie o prenosoch do tretích krajín,
+- lehoty uchovávania a stručný popis technických a organizačných bezpečnostných opatrení.
+
+GDPR – Osobné údaje v logoch a architektúra služby (články 5, 25, 30, 32)  [GDPR_logy_architektura]
+IP adresy, identifikátory používateľov a iné sledovacie údaje v logoch sa považujú za osobné údaje, pokiaľ sú priraditeľné ku konkrétnej osobe.
+Pri návrhu architektúry služby s logmi obsahujúcimi osobné údaje treba:
+- uplatniť zásady minimalizácie a obmedzenia účelu – logovať len to, čo je nevyhnutné pre bezpečnosť a prevádzku, nie pre „istotu“,
+- navrhnúť vhodnú dobu uchovávania logov a automatické mazanie alebo anonymizáciu po jej uplynutí (storage limitation), [web:170]
+- používať pseudonymizáciu alebo čiastočnú anonymizáciu (napr. hashovanie identifikátorov so saltom, skracovanie IP adries, oddelenie identít od technických udalostí), [web:170]
+- zabezpečiť šifrovanie logov v prenose aj v úložisku a obmedziť prístup len na nevyhnutné role (need-to-know),
+- viesť záznamy o spracovateľských činnostiach pre logovanie (účel, kategórie údajov, retention, bezpečnostné opatrenia) podľa článku 30 GDPR.
+Tieto požiadavky tvoria súčasť princípov „data protection by design and by default“ pri návrhu architektúry.

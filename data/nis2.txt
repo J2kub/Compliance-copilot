@@ -1,0 +1,30 @@
+NIS2 – Rozsah pôsobnosti (článok 2)  [NIS2_rozsah]
+Táto smernica sa vzťahuje na stredné a veľké subjekty v kritických odvetviach (energetika, doprava, bankovníctvo, zdravotníctvo, digitálna infraštruktúra). Ide o tzv. základné a dôležité subjekty.
+Hlavné body:
+- posudzuje sa veľkosť organizácie a sektor, v ktorom pôsobí,
+- menšie subjekty môžu byť zahrnuté, ak sú kritické pre spoločnosť alebo ekonomiku,
+- členské štáty môžu rozšíriť rozsah na ďalšie subjekty.
+
+NIS2 – Riadenie bezpečnostných rizík (článok 21)  [NIS2_rizika]
+Subjekty musia zaviesť primerané technické a organizačné opatrenia na riadenie bezpečnostných rizík. Cieľom je predchádzať incidentom a minimalizovať ich dopad.
+Hlavné opatrenia:
+- politika bezpečnosti informácií a systematické riadenie rizík,
+- incident management, business continuity a disaster recovery,
+- školenia zamestnancov a zvyšovanie povedomia,
+- opatrenia na riadenie dodávateľského reťazca a hodnotenie rizík dodávateľov,
+- bezpečný vývoj a údržba systémov, riadenie prístupov, logovanie a monitoring. [web:170]
+
+NIS2 – Hlášenie incidentov (článok 23)  [NIS2_reporting]
+NIS2 zavádza viacstupňové hlásenie „významných incidentov“ príslušným orgánom alebo CSIRT. Významný incident je taký, ktorý spôsobí závažné narušenie služieb alebo značné škody.
+Časová os:
+- do 24 hodín: skoré varovanie (early warning) – základné informácie a indikácia, či ide o úmyselný útok, [web:184]
+- do 72 hodín: incident notification – prvotné zhodnotenie dopadov, závažnosti a indikátorov kompromitácie, [web:184]
+- do 1 mesiaca: finálna správa – detailný popis incidentu, príčina, prijaté opatrenia a plán ďalších krokov. [web:184]
+
+NIS2 – Architektúra služby a logy (články 21, 23)  [NIS2_architektura_logy]
+Pri návrhu služby spadajúcej pod NIS2, ktorá pracuje s logmi, treba zabezpečiť:
+- zber a uchovávanie dostatočných logov na detekciu, vyšetrovanie a hlásenie incidentov podľa článku 23, [web:170][web:173]
+- prepojenie logovania s procesmi riadenia incidentov, business continuity a disaster recovery (článok 21), [web:170]
+- integráciu logov do SOC/SIEM alebo iného monitorovacieho riešenia s nastavenými alertami pre „významné incidenty“, [web:170]
+- opatrenia v dodávateľskom reťazci – požiadavky na logovanie, reporting a SLA pre dodávateľov, ktorí ovplyvňujú poskytovanie regulovanej služby.
+Architektúra by mala umožniť rýchle zostavenie podkladov pre early warning, incident notification aj finálnu správu z jedného konzistentného zdroja logov.
